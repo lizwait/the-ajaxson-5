@@ -45,9 +45,9 @@ function validateSearch()
         riddle.removeClass("border border-danger");
         $("#error").text("");
         return true;
-        
+
     } else {
-        $("#error").text("No gifs for you.").attr("hidden", false);
+        $("#error").text("No gifs for you. Please try again.").attr("hidden", false);
         riddle.addClass("border border-danger");
         setGifLoadedStatus(false);
         return false;
